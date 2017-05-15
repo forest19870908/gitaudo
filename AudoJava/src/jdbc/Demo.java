@@ -10,7 +10,7 @@ public class Demo {
     static ResultSet ret = null;  
   
     public static void main(String[] args) {  
-        sql = "select *from stuinfo";//SQL语句  
+        sql = "select * from stuinfo";//SQL语句  
         db1 = new DBHelper(sql);//创建DBHelper对象  
   
         try {  
