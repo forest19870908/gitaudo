@@ -7,13 +7,13 @@ public class VolatileTest {
 	}
 	public static void main(String[] args) {
 		long a=System.currentTimeMillis();
-		Thread[] threads=new Thread[20];
+		Thread[] threads=new Thread[18000];
 		for (int i = 0; i < threads.length; i++) {
 			threads[i]=new Thread(new Runnable() {
 				
 				@Override
 				public void run() {
-					for (int j = 0; j < 1000000; j++) {
+					for (int j = 0; j < 1000; j++) {
 						increase();
 					}
 				}
